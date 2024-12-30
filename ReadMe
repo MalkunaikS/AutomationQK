@@ -1,0 +1,19 @@
+* Automation Testing Assignment *
+  step 1:
+- Create Maven project
+
+  step 2: 
+- Update that add dependencies in POM.xml (selenium, test Ng dependency).
+
+- For Given Task I have selected "Open Cart" Application to perform given validation which includes 3 task.
+- I have created Packeges under src/test/java. the first package which "pageobject" includes class basepage, homepage, accountregistrationpage etc.      
+  the BasePage under pageObjects which includes only constructor which is common in every pageobject class so I have created a seperate class to reuse in every pageobject. 
+  This will be invoked by every Page Object Class constructor (Re-usability).
+- Base class contain @beforeclass and @Afterclass method which includes browser setup and tear down method which is again common in evey testcases so here i have created seperate package as 
+  "Baseclass"   extends this in every child class.
+  
+ 
+ Steps by step process :
+ Create Page Object Classes for HomePage, RegistrationPage  under pageObjects package. (These classes extends from BasePage).
+ Create AccountRegistrationTest under "testCases"
+ Create BaseClass under testBase package and copy re-usable methods.
